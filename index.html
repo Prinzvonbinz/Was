@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warte Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="menu-main" class="menu active">
+    <h1>Warte Simulator</h1>
+    <button id="btnStartGame" class="btn">Spiel starten</button>
+    <button id="btnOpenShop" class="btn">Shop öffnen</button>
+  </div>
+
+  <div id="menu-game" class="menu">
+    <h2>Warte Simulator</h2>
+    <div class="status">
+      <div>Punkte: <span id="pointsDisplay">0</span></div>
+      <div>Zeit: <span id="timerDisplay">00:00:00</span></div>
+      <div id="messageDisplay" class="message"></div>
+    </div>
+    <div class="button-row">
+      <button id="btnStart" class="btn small">Start</button>
+      <button id="btnReset" class="btn small">Reset</button>
+    </div>
+    <button id="btnBackToMenu" class="btn">Hauptmenü</button>
+  </div>
+
+  <div id="menu-shop" class="menu">
+    <h2>Shop</h2>
+    <div>Punkte: <span id="pointsDisplayShop">0</span></div>
+    <div class="upgrade">
+      <div class="upgrade-description">
+        <b>x2 Geschwindigkeit</b><br />
+        Zeit läuft doppelt so schnell<br />
+        Preis: <span id="priceSpeed">100</span>
+      </div>
+      <button id="btnUpgradeSpeed" class="btn small">Kaufen</button>
+    </div>
+    <div class="upgrade">
+      <div class="upgrade-description">
+        <b>x2 Belohnung</b><br />
+        Verdoppelt Punkte beim Reset<br />
+        Preis: <span id="priceReward">100</span>
+      </div>
+      <button id="btnUpgradeReward" class="btn small">Kaufen</button>
+    </div>
+    <div class="upgrade">
+      <div class="upgrade-description">
+        <b>Millisekunden</b><br />
+        Zeigt Millisekunden an<br />
+        Preis: <span id="priceMilliseconds">200</span>
+      </div>
+      <button id="btnUpgradeMilliseconds" class="btn small">Kaufen</button>
+    </div>
+    <button id="btnBackFromShop" class="btn">Zurück</button>
+    <button id="btnResetGame" class="btn small">Spiel zurücksetzen</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

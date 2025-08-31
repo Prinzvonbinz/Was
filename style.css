@@ -1,0 +1,88 @@
+body {
+  background-color: #2e1a4a;
+  color: #d6caff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+  max-width: 400px;
+  width: 100%;
+  background: #3b2770;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px #9d8aff;
+  text-align: center;
+}
+
+.menu.active {
+  display: block;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #6f57b1;
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  margin: 10px 5px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 110px;
+}
+
+.btn:hover {
+  background-color: #8e75d9;
+}
+
+.btn.small {
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  min-width: 90px;
+}
+
+.status {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.upgrade {
+  background: #4b3991;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #d6caff;
+}
+
+.upgrade-description {
+  text-align: left;
+  max-width: 250px;
+  font-size: 0.9rem;
+}
+
+.message {
+  height: 24px;
+  color: #bdbdbd;
+  margin-top: 5px;
+}
